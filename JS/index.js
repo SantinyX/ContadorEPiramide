@@ -28,8 +28,6 @@ Ex: ${"nome do var"} puxa VAR
 */
 
 /*----------------- EVENTO DE CLIQUE CONTADOR -----------------*/
-const btnClick = document.getElementById('botaoClick')
-const btnZerar = document.getElementById('ze')
 const objMark = document.getElementsByTagName('mark')[0]
 let contador = 0
 
@@ -37,12 +35,12 @@ let contador = 0
 function contar() {
     contador = contador + 1
     //ou contador++    
-    objMark.innerHTML = contador    
+    objMark.innerHTML = contador
 }
 
-function zerar() {
-    contador = 0    
-    objMark.innerHTML = contador
+function zerar(index) {
+    contador = 0
+    objMark.innerHTML = contador    
 }
 
 function exibirPiramide(linhas) {
@@ -54,7 +52,7 @@ function exibirPiramide(linhas) {
     }
 }
 
-function piramide(){
+function piramide() {
     exibirPiramide(contador)
 }
 
